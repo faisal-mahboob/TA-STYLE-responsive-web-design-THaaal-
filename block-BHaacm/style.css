@@ -1,0 +1,347 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* Custom Styles */
+
+html {
+    font-size: 12px;
+}
+
+.header {
+    background-color: rgb(34, 41, 70);
+}
+
+.header-inside {
+    height: 5rem;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+ul {
+    display: flex;
+}
+
+li {
+    margin-left: 20px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.5rem;
+}
+
+.image-size {
+    width: 40px;
+    height: 40px;
+}
+
+/* Container */
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+/* Flex */
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Section 1 */
+
+.col-1 {
+    flex: 0 1 48%;
+}
+
+.col-2 {
+    flex: 0 1 48%;
+}
+
+.title {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.title1-1 {
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 4rem;
+    margin-bottom: 3rem;
+}
+
+.paragraph {
+    font-size: 1.25rem;
+    line-height: 1.5;
+    font-family: 'Poppins', sans-serif;
+    padding: 2rem 0;
+}
+
+.button {
+    width: 12rem;
+    height: 4.75rem;
+    background-color: rgb(55, 182, 103);
+    border-radius: 0.5rem;
+    color: white;
+    font-size: 1.5rem;
+    border: none;
+}
+
+.image-section1 {
+    width: 100%;
+}
+
+.section1 {
+    padding: 4.5rem 0rem;
+    background-color: rgb(233, 236, 252);
+}
+
+
+
+.col-3 {
+    width: 30%;
+}
+
+.image-section2 {
+    width: 100%;
+}
+
+.title2 {
+    font-size: 1.5rem;
+    margin: 2rem 0;
+}
+
+.paragraph2 {
+    font-size: 1rem;
+    line-height: 1.5;
+    font-family: 'Poppins', sans-serif;
+}
+
+.button-2 {
+    height: 4rem;
+    width: 10rem;
+    font-size: 1.2rem;
+    color: white;
+    background-color: rgb(55, 182, 103);
+    border: none;
+    margin-top: 2rem;
+    border-radius: 0.5rem;
+}
+
+/* Footer */
+
+.footer {
+    background-color: rgb(34, 41, 70);
+    color: white;
+    height: 5rem;
+
+}
+
+small {
+    font-size: 1.5rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+i {
+    margin-left: 1rem;
+    font-size: 2rem;
+}
+
+.footer-inside{
+    display:flex;
+    justify-content:space-between;
+}
+
+.flex-footer {
+    line-height:5rem;
+    margin-top:3rem;
+}
+
+@media screen and (max-width:768px){
+
+    .header{
+        padding:1rem 0;
+    }
+    .header-inside {
+        display: inline-block;
+        text-align: center;
+    }
+    nav{
+        display:flex;
+        justify-content:center;
+        padding-top:1rem;
+    }
+
+    .flex{
+        flex-wrap:wrap;
+    }
+    .col-1, .col-2{
+        flex: 1 1 100%;
+        margin:3rem 3rem;
+    }
+
+    .col-3{
+        flex:1 1 100%;
+        margin-top:3rem;
+        margin-bottom:1rem;
+        margin-left:3rem;
+        margin-right:3rem;
+    }
+    .footer-inside{
+        display:inline-block;
+        text-align:center;
+    }
+    small{
+        text-align:center;
+    }
+
+    .icons{
+        text-align:center;
+    }
+
+    .flex-footer{
+        margin-top:0;
+    }
+    i{
+        margin-left:0.3rem;
+    }
+    .footer{
+        margin-top:3rem;
+        height:10rem;
+    }
+}
